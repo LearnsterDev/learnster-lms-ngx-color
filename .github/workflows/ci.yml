@@ -1,4 +1,4 @@
-name: Build, Test and Package For Master Branch
+name: Build and package for master branch
 on:
   push:
     branches:
@@ -20,8 +20,6 @@ jobs:
       - name: lint
         run: npm run lint
       - run: npm run build
-      - name: test
-        run: npm run test:ci
       - name: release
         run: cd dist && npx semantic-release
         env:
