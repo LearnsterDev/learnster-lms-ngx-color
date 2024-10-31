@@ -62,10 +62,5 @@
     "tslib": "2.5.0",
     "typescript": "5.4.5",
     "zone.js": "0.14.10"
-  },
-  "release": {
-    "branches": [
-      "master"
-    ]
   }
 }
