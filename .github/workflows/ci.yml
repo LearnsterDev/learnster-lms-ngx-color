@@ -11,7 +11,7 @@ jobs:
       packages: write
     steps:
       - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
+      - uses: actions/setup-node@v4
         with:
           node-version: '22.x'
           registry-url: 'https://npm.pkg.github.com'
@@ -22,6 +22,11 @@ jobs:
       - run: npm run build
       - name: test
         run: npm run test:ci
+      - name: modify package name
+        run: |
+          NEW_NAME="@learnsterdev/learnster-lms-ngx-color"
+          jq ".name=\"$NEW_NAME\"" ./src/lib/package.json > temp.json && mv temp.json ./dist/package.json
+
       - name: release
         run: cd dist && npx semantic-release
         env:
