@@ -6,7 +6,7 @@ import {
   Output,
 } from '@angular/core';
 
-import { isValidHex, HSV, RGB } from 'ngx-color';
+import { isValidHex, HSV, RGB } from '@learnsterdev/learnster-lms-ngx-color';
 
 @Component({
   selector: 'color-photoshop-fields',
