@@ -26,13 +26,12 @@
     "popup"
   ],
   "publishConfig": {
-    "access": "public",
-    "provenance": true
+    "registry": "https://npm.pkg.github.com"
   },
   "release": {
     "branches": [
       "master"
     ],
-    "plugins": ["@semantic-release/github"]
+    "plugins": ["@semantic-release/npm"]
   }
 }
