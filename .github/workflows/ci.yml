@@ -24,7 +24,7 @@ jobs:
         run: npm run test:ci
       - name: modify package name
         run: |
-          NEW_NAME="@learnsterdev/learnster-lms-ngx-color"
+          NEW_NAME="@learnsterdev/ngx-color"
           jq ".name=\"$NEW_NAME\"" ./src/lib/package.json > temp.json && mv temp.json ./dist/package.json
 
       - name: release
