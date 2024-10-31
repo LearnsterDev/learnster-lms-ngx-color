@@ -6,7 +6,7 @@ import {
   Output,
 } from '@angular/core';
 
-import { Shape } from '@learnsterdev/learnster-lms-ngx-color';
+import { Shape } from 'ngx-color';
 
 @Component({
   selector: 'color-sketch-preset-colors',

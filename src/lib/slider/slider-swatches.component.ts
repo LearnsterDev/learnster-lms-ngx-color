@@ -6,7 +6,7 @@ import {
   Output,
 } from '@angular/core';
 
-import { HSL } from '@learnsterdev/learnster-lms-ngx-color';
+import { HSL } from 'ngx-color';
 
 @Component({
   selector: 'color-slider-swatches',

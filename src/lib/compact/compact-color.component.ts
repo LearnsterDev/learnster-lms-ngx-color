@@ -7,7 +7,7 @@ import {
   Output,
 } from '@angular/core';
 
-import { getContrastingColor } from '@learnsterdev/learnster-lms-ngx-color';
+import { getContrastingColor } from 'ngx-color';
 
 @Component({
   selector: 'color-compact-color',

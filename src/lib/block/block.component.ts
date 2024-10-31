@@ -8,7 +8,7 @@ import {
   getContrastingColor,
   isValidHex,
   SwatchModule,
-} from '@learnsterdev/learnster-lms-ngx-color';
+} from 'ngx-color';
 import { BlockSwatchesComponent } from './block-swatches.component';
 import { NG_VALUE_ACCESSOR } from '@angular/forms';
 

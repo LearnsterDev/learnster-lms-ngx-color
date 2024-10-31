@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 
-import { ColorEvent } from '@learnsterdev/learnster-lms-ngx-color';
+import { ColorEvent } from 'ngx-color';
 
 @Component({
   selector: 'app-root',
