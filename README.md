@@ -136,7 +136,7 @@ you just need to get the color once use `onChangeComplete`.
 
 ```ts
 import { Component } from '@angular/core';
-import { ColorEvent } from 'ngx-color';
+import { ColorEvent } from '@learnsterdev/ngx-color';
 
 @Component({
   selector: 'selector-name',

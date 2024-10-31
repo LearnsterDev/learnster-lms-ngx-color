@@ -6,7 +6,7 @@ import {
   Output,
 } from '@angular/core';
 
-import { isValidHex, HSLA, RGBA } from 'ngx-color';
+import { isValidHex, HSLA, RGBA } from '@learnsterdev/ngx-color';
 import { TinyColor } from '@ctrl/tinycolor';
 
 @Component({

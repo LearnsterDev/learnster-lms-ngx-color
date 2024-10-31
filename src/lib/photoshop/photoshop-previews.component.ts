@@ -4,7 +4,7 @@ import {
   Input,
   OnChanges,
 } from '@angular/core';
-import { RGB } from 'ngx-color';
+import { RGB } from '@learnsterdev/ngx-color';
 
 @Component({
   selector: 'color-photoshop-previews',

@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 
-import { ColorEvent } from 'ngx-color';
+import { ColorEvent } from '@learnsterdev/ngx-color';
 
 @Component({
   selector: 'app-root',

@@ -2,8 +2,8 @@
   "name": "@learnsterdev/ngx-color",
   "version": "0.0.0",
   "license": "MIT",
-  "homepage": "https://github.com/scttcper/ngx-color",
-  "bugs": "https://github.com/scttcper/ngx-color/issues",
+  "homepage": "https://github.com/learnsterdev/learnster-lms-ngx-color",
+  "bugs": "https://github.com/learnsterdev/learnster-lms-ngx-color/issues",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/learnsterdev/learnster-lms-ngx-color.git"

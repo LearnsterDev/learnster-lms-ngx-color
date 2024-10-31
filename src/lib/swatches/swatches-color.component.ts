@@ -7,7 +7,7 @@ import {
   Output,
 } from '@angular/core';
 
-import { getContrastingColor } from 'ngx-color';
+import { getContrastingColor } from '@learnsterdev/ngx-color';
 
 @Component({
   selector: 'color-swatches-color',
