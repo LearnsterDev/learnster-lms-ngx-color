@@ -1,28 +1,11 @@
-name: CI actions
+name: Build, Test and Package For Master Branch
 on:
   push:
     branches:
       - master
 jobs:
-  build:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
-        with:
-          node-version: '22.x'
-          cache: 'npm'
-      - run: npm ci
-      - name: lint
-        run: npm run lint
-      - run: npm run build
-      - name: test
-        run: npm run test:ci
-
   publish:
-    needs: build
     runs-on: ubuntu-latest
-    if: github.ref_name == 'master'
     permissions:
       contents: write
       packages: write
@@ -34,8 +17,13 @@ jobs:
           registry-url: 'https://npm.pkg.github.com'
           scope: '@learnsterdev'
       - run: npm ci
+      - name: lint
+        run: npm run lint
       - run: npm run build
+      - name: test
+        run: npm run test:ci
       - name: release
         run: cd dist && npx semantic-release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
